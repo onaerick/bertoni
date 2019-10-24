@@ -1,0 +1,85 @@
+﻿@model WebApplicationBertoni.ViewModels.AlbumViewModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-10 grid-column-start-2">
+    <div>
+
+        <section class="content content-scrollable">
+            <div class="box">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="AlbumList"></label>
+                                <select asp-for="AlbumId" asp-items="@Model.AlbumList" id="AlbumId" class="form-control select2">
+                                    <option selected value="">Select</option>
+                                </select>
+                                <span asp-validation-for="AlbumId" class="text-danger"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" name="btnSearch" id="btnSearch" class="btn btn-primary">Visualizar Album</button>
+                    </div>
+                    <div id="DataTablePhoto"></div>
+
+                    <div id="DataTableComment"></div>
+                </div>
+                </div>
+        </section>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.select2').select2();
+            $("#btnSearch").click(function () {
+                var oData = {
+                    albumId: $('#AlbumId').val(),
+                };
+
+                var url = '@Url.Action("DataTablePhoto", "home")?albumId=' + oData.albumId;
+                $.get(url, function (data) {
+                    $("#DataTablePhoto").html(data);
+                    $("#DataTablePhoto").show();
+
+                });
+            });
+
+        });
+        function ShowComment(id)
+        {
+                var url = '@Url.Action("DataTableComment", "home")?photoId=' + id;
+                $.get(url, function (data) {
+                    $("#DataTableComment").html(data);
+                    $("#DataTableComment").show();
+                    goToByScroll("DataTableComment");
+
+                });
+        }
+
+        /*https://stackoverflow.com/questions/3432656/scroll-to-a-div-using-jquery */
+        function goToByScroll(id) {
+            // Remove "link" from the ID
+            //id = id.replace("link", "");
+            // Scroll
+            $('html,body').animate({
+                scrollTop: $("#" + id).offset().top
+            }, 'slow');
+        }
+
+        $("#sidebar > ul > li > a").click(function (e) {
+            // Prevent a page reload when a link is pressed
+            e.preventDefault();
+            // Call the scroll function
+            goToByScroll(this.id);
+        });
+    </script>
+}
+

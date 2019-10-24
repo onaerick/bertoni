@@ -1,0 +1,65 @@
+2019-10-24 10:08:57.060 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/  
+2019-10-24 10:08:57.229 -05:00 [Information] Request finished in 187.0266ms 404 
+2019-10-24 14:45:25.542 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/  
+2019-10-24 14:45:25.674 -05:00 [Information] Executing endpoint '"WebApplicationBertoni.Controllers.HomeController.Index (WebApplicationBertoni)"'
+2019-10-24 14:45:25.732 -05:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "WebApplicationBertoni.Controllers.HomeController" ("WebApplicationBertoni").
+2019-10-24 14:45:26.005 -05:00 [Information] Executing action method "WebApplicationBertoni.Controllers.HomeController.Index (WebApplicationBertoni)" - Validation state: Valid
+2019-10-24 14:45:26.020 -05:00 [Information] Start processing HTTP request "GET" https://jsonplaceholder.typicode.com/albums
+2019-10-24 14:45:26.024 -05:00 [Information] Sending HTTP request "GET" https://jsonplaceholder.typicode.com/albums
+2019-10-24 14:45:27.167 -05:00 [Information] Received HTTP response after 1137.77ms - OK
+2019-10-24 14:45:27.170 -05:00 [Information] End processing HTTP request after 1153.5317ms - OK
+2019-10-24 14:45:27.354 -05:00 [Information] Executed action method "WebApplicationBertoni.Controllers.HomeController.Index (WebApplicationBertoni)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1341.6894ms.
+2019-10-24 14:45:27.441 -05:00 [Information] Executing ViewResult, running view "Index".
+2019-10-24 14:45:27.927 -05:00 [Information] Executed ViewResult - view "Index" executed in 539.651ms.
+2019-10-24 14:45:27.934 -05:00 [Information] Executed action "WebApplicationBertoni.Controllers.HomeController.Index (WebApplicationBertoni)" in 2201.8611ms
+2019-10-24 14:45:27.937 -05:00 [Information] Executed endpoint '"WebApplicationBertoni.Controllers.HomeController.Index (WebApplicationBertoni)"'
+2019-10-24 14:45:27.960 -05:00 [Information] Request finished in 2439.8245ms 200 text/html; charset=utf-8
+2019-10-24 14:45:28.155 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/plugins/select2/css/select2.min.css?v=6iN5hUJ9tVc9p9AuLOaI_iM3owj5oI29c2l0MPa8Cu0  
+2019-10-24 14:45:28.155 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/lib/bootstrap/dist/css/bootstrap.css  
+2019-10-24 14:45:28.160 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/lib/jquery/dist/jquery.js  
+2019-10-24 14:45:28.160 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/css/site.css  
+2019-10-24 14:45:28.190 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-10-24 14:45:28.209 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/plugins/select2/js/select2.min.js  
+2019-10-24 14:45:28.224 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-10-24 14:45:28.257 -05:00 [Information] Sending file. Request path: '"/plugins/select2/css/select2.min.css"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\plugins\select2\css\select2.min.css"'
+2019-10-24 14:45:28.257 -05:00 [Information] Request finished in 102.0501ms 200 text/css
+2019-10-24 14:45:28.276 -05:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\css\site.css"'
+2019-10-24 14:45:28.276 -05:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\js\site.js"'
+2019-10-24 14:45:28.277 -05:00 [Information] Request finished in 86.4971ms 200 application/javascript
+2019-10-24 14:45:28.277 -05:00 [Information] Request finished in 116.8852ms 200 text/css
+2019-10-24 14:45:28.297 -05:00 [Information] Sending file. Request path: '"/plugins/select2/js/select2.min.js"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\plugins\select2\js\select2.min.js"'
+2019-10-24 14:45:28.298 -05:00 [Information] Request finished in 89.0222ms 200 application/javascript
+2019-10-24 14:45:28.299 -05:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.js"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js"'
+2019-10-24 14:45:28.299 -05:00 [Information] Request finished in 75.5182ms 200 application/javascript
+2019-10-24 14:45:28.300 -05:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2019-10-24 14:45:28.300 -05:00 [Information] Request finished in 145.6946ms 200 text/css
+2019-10-24 14:45:28.300 -05:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\erick\Desktop\WebApplicationBertoni\WebApplicationBertoni\wwwroot\lib\jquery\dist\jquery.js"'
+2019-10-24 14:45:28.301 -05:00 [Information] Request finished in 144.3861ms 200 application/javascript
+2019-10-24 14:45:31.436 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/Home/DataTablePhoto?albumId=43  
+2019-10-24 14:45:31.445 -05:00 [Information] Executing endpoint '"WebApplicationBertoni.Controllers.HomeController.DataTablePhoto (WebApplicationBertoni)"'
+2019-10-24 14:45:31.493 -05:00 [Information] Route matched with "{action = \"DataTablePhoto\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DataTablePhoto(Int32)" on controller "WebApplicationBertoni.Controllers.HomeController" ("WebApplicationBertoni").
+2019-10-24 14:45:31.561 -05:00 [Information] Executing action method "WebApplicationBertoni.Controllers.HomeController.DataTablePhoto (WebApplicationBertoni)" - Validation state: Valid
+2019-10-24 14:45:31.565 -05:00 [Information] Start processing HTTP request "GET" https://jsonplaceholder.typicode.com/photos
+2019-10-24 14:45:31.565 -05:00 [Information] Sending HTTP request "GET" https://jsonplaceholder.typicode.com/photos
+2019-10-24 14:45:31.952 -05:00 [Information] Received HTTP response after 387.2031ms - OK
+2019-10-24 14:45:31.952 -05:00 [Information] End processing HTTP request after 387.6368ms - OK
+2019-10-24 14:45:32.515 -05:00 [Information] Executed action method "WebApplicationBertoni.Controllers.HomeController.DataTablePhoto (WebApplicationBertoni)", returned result "Microsoft.AspNetCore.Mvc.PartialViewResult" in 953.7932ms.
+2019-10-24 14:45:32.526 -05:00 [Information] Executing PartialViewResult, running view "_DataTablePhoto".
+2019-10-24 14:45:32.655 -05:00 [Information] Executed PartialViewResult - view "_DataTablePhoto" executed in 135.1866ms.
+2019-10-24 14:45:32.655 -05:00 [Information] Executed action "WebApplicationBertoni.Controllers.HomeController.DataTablePhoto (WebApplicationBertoni)" in 1161.8135ms
+2019-10-24 14:45:32.655 -05:00 [Information] Executed endpoint '"WebApplicationBertoni.Controllers.HomeController.DataTablePhoto (WebApplicationBertoni)"'
+2019-10-24 14:45:32.655 -05:00 [Information] Request finished in 1219.2844ms 200 text/html; charset=utf-8
+2019-10-24 14:45:34.290 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44340/Home/DataTableComment?photoId=2101  
+2019-10-24 14:45:34.297 -05:00 [Information] Executing endpoint '"WebApplicationBertoni.Controllers.HomeController.DataTableComment (WebApplicationBertoni)"'
+2019-10-24 14:45:34.317 -05:00 [Information] Route matched with "{action = \"DataTableComment\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DataTableComment(Int32)" on controller "WebApplicationBertoni.Controllers.HomeController" ("WebApplicationBertoni").
+2019-10-24 14:45:34.385 -05:00 [Information] Executing action method "WebApplicationBertoni.Controllers.HomeController.DataTableComment (WebApplicationBertoni)" - Validation state: Valid
+2019-10-24 14:45:34.392 -05:00 [Information] Start processing HTTP request "GET" https://jsonplaceholder.typicode.com/comments
+2019-10-24 14:45:34.392 -05:00 [Information] Sending HTTP request "GET" https://jsonplaceholder.typicode.com/comments
+2019-10-24 14:45:34.820 -05:00 [Information] Received HTTP response after 428.4279ms - OK
+2019-10-24 14:45:34.820 -05:00 [Information] End processing HTTP request after 428.9386ms - OK
+2019-10-24 14:45:34.964 -05:00 [Information] Executed action method "WebApplicationBertoni.Controllers.HomeController.DataTableComment (WebApplicationBertoni)", returned result "Microsoft.AspNetCore.Mvc.PartialViewResult" in 579.667ms.
+2019-10-24 14:45:34.969 -05:00 [Information] Executing PartialViewResult, running view "_DataTableComm".
+2019-10-24 14:45:34.988 -05:00 [Information] Executed PartialViewResult - view "_DataTableComm" executed in 22.5788ms.
+2019-10-24 14:45:34.988 -05:00 [Information] Executed action "WebApplicationBertoni.Controllers.HomeController.DataTableComment (WebApplicationBertoni)" in 669.2356ms
+2019-10-24 14:45:34.988 -05:00 [Information] Executed endpoint '"WebApplicationBertoni.Controllers.HomeController.DataTableComment (WebApplicationBertoni)"'
+2019-10-24 14:45:34.988 -05:00 [Information] Request finished in 697.9421ms 200 text/html; charset=utf-8
